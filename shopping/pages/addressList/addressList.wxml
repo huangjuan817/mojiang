@@ -1,0 +1,23 @@
+<!--pages/addressList/addressList.wxml-->
+<!-- 地址列表为空 展示内容  -->
+<!-- <view class="addressUnll">
+	<view>暂无地址信息</view>
+	<view>请点击底部按钮添加地址</view>
+</view> -->
+<!-- 地址列表 展示内容 -->
+<view class="addressList">
+	<view class="address">
+		<view class="addressText">
+			<view>陈（女士）13599997777</view>
+			<view class="site">渝北区东部公园455路2号6栋16-5</view>
+		</view>
+		<view class="iconfont iconbianji" bindtap="address"></view>
+	</view>
+</view>
+
+<!-- 底部按钮 -->
+<view class="addressBut" bindtap="address">
+	<view class="taplink">
+		<text>添加地址</text>
+	</view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/note/note.wxml-->
+
+<form action="">
+	<view class="note">
+		<view class="hine">快捷标签</view>
+		<view class="list">
+			<block wx:for="{{picklist}}" wx:key="">
+				<view data-select="{{item.listname}}" class="{{item.listname == name ? 'active':''}}" bindtap="tablist">{{item.listname}}</view>
+			</block>
+		</view>
+		<view class="text">
+			<textarea name="" id="" cols="30" rows="10" placeholder="请输入备注信息" value="{{noteText}}"></textarea>
+		</view>
+		<view class="submitBut">
+			<button type="submit">提交</button>
+		</view>
+	</view>
+	
+</form>
+

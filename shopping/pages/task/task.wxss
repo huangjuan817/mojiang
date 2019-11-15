@@ -1,0 +1,115 @@
+/* pages/task/task.wxss */
+@import "/public/iconfont.wxss"
+
+page {
+	background: #f7f7f7;
+	font-size: 30rpx;
+	color: #333;
+}
+
+.head {
+	overflow: hidden;
+	height: auto;
+	background: #fff;
+	padding: 20rpx;
+	display: flex;
+}
+
+.head .headLeft {
+	flex: 1;
+	overflow: hidden;
+}
+
+.head .headLeft .t1 {
+	overflow: hidden;
+}
+
+.head .headLeft .t2 {
+	overflow: hidden;
+	font-size: 40rpx;
+	font-weight: 600;
+}
+
+.head .headLeft .t3 {
+	overflow: hidden;
+	margin-top: 30rpx;
+	line-height: 48rpx;
+}
+
+.head .headImg {
+	flex: 1;
+	text-align: right;
+}
+
+.head .headImg>image {
+	width: 299rpx;
+	height: 229rpx;
+}
+
+.content {
+	overflow: hidden;
+	background: #fff;
+	height: auto;
+	padding: 30rpx 0rpx 0rpx 20rpx;
+	margin-top: 20rpx;
+}
+
+.content .hine {
+	height: auto;
+	overflow: hidden;
+	padding-right: 20rpx;
+	font-size: 32rpx;
+	font-weight: 600;
+}
+
+.content .hine>text {
+	font-size: 26rpx;
+	color: #999;
+	font-weight: 100;
+}
+
+.content .list {
+	overflow: hidden;
+}
+
+.content .list .tasklist {
+	overflow: hidden;
+	padding: 30rpx 20rpx 30rpx 0;
+	border-bottom: 2rpx solid #e7e7e7;
+	display: flex;
+	line-height: 48rpx;
+}
+
+.content .list .tasklist:last-child {
+	border-bottom: none;
+}
+
+.content .list .tasklist .listTit {
+	overflow: hidden;
+	flex: 4;
+}
+
+.content .list .tasklist .listTit .text {
+	font-size: 26rpx;
+	color: #999;
+}
+
+.content .list .tasklist .listActive {
+	overflow: hidden;
+	flex: 1;
+	padding-top: 20rpx;
+}
+
+.content .list .tasklist .listActive>text {
+	overflow: hidden;
+	padding: 10rpx 28rpx;
+	border-radius: 40rpx;
+	background: #f5f6f6;
+	font-size: 28rpx;
+	color: #999;
+}
+
+.content .list .tasklist .listActive>text.active {
+	background: #d3aa79;
+	color: #fff;
+}

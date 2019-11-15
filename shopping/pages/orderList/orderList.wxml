@@ -1,0 +1,27 @@
+<!--pages/orderList/orderList.wxml-->
+
+<!-- 无订单状态 -->
+<view>
+	<viw class="take">
+		<image class="take_icon" src="../../images/take_history.jpg"></image>
+		<view class="take_hine">
+			<view>您今天还没有下单</view>
+			<view>快去选择一杯喜欢的茶吧</view>
+		</view>
+	</viw>
+</view>
+
+<!-- 订单状态 -->
+<view class="orderList">
+	<view class="order" wx:for="{{ order }}" wx:key="">
+		<view class="ordername">
+			<text>{{ item.store }}</text>
+			<text class="state1">{{ item.state }}</text>
+		</view>
+		<view class="text">下单时间：{{ item.tiem }}</view>
+		<view class="text">
+			<text>下单编号：{{ item.number }}</text>
+			<text class="price">￥{{ item.money }}</text>
+		</view>
+	</view>
+</view>

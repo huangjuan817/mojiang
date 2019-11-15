@@ -1,0 +1,15 @@
+<!--pages/integral/integral.wxml-->
+<view class="head">
+	<view class="headText">
+		<view class="t1">可用积分</view>
+		<view class="t2">0</view>
+		<view class="t3">
+			<navigator hover-class="none" url="/pages/integralList/integralList">积分明细</navigator>
+			<view>|</view>
+			<navigator hover-class="none" url="/pages/exchangeList/exchangeList">兑换记录</navigator>
+		</view>
+	</view>
+	<view class="headImg">
+		<image src="../../images/integral.jpg"></image>
+	</view>
+</view>

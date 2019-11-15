@@ -1,0 +1,15 @@
+<!--pages/exchange/exchange.wxml-->
+
+<view class="exchange">
+	<image class="exchangeImg" src="../../images/exchangeImg.jpg"></image>
+	<navigator class="exchangeTap" hover-class="none" url="/pages/content/content">查看兑换规则</navigator>
+	<input class="exchangeInput" type="text" placeholder="请输入兑换码" />
+	<view class="exchangeAge">
+		<checkbox value="" checked="" />
+		<text>同意</text>
+		<navigator url="/pages/content/content">《尛匠猩球付费会员服务协议》</navigator>
+	</view>
+	<button class="siteSub" formType="submit">兑换</button>
+</view>
+
+

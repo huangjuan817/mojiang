@@ -1,0 +1,50 @@
+<!--pages/vip/vip.wxml-->
+
+
+<view>
+	<view class="viphead">
+		<view class="user">
+			<view class="vipName">用户昵称</view>
+			<navigator url="" class="vipCard">登录尛匠猩球</navigator>
+		</view>
+		<view class="card">
+			<image src="../../images/vip2.jpg"></image>
+		</view>
+	</view>
+	<view class="content">
+		<view class="discounts">
+			<view class="discounts_head">
+				<text>等级权益</text>
+			</view>
+			<view class="discounts_list">
+				<view class="discounts_listC" wx:for="{{ vouchers }}" wx:key="">
+					<image class="vip_icon1" src="{{ item.src }}"></image>
+				</view>
+			</view>
+		</view>
+		<view class="discounts">
+			<view class="discounts_head">
+				<text>开通礼包</text>
+			</view>
+			<view class="discounts_list">
+				<!-- <view class="discounts_listC" wx:for="{{ discounts }}" wx:key="">
+					<image src="{{ item.src }}"></image>
+					<view>{{ item.name }}</view>
+				</view> -->
+				<view class="discounts_listC">
+					<image class="vip_icon2" src="/images/vip-icon3.jpg"></image>
+				</view>
+			</view>
+		</view>
+		<!-- 列表区内容 -->
+		<view class="discounts">
+			<navigator url="{{ item.url }}" class="list" wx:for="{{ listTap }}" wx:key="">
+				<view class="listLeft">{{ item.name }}</view>
+				<view class="listRight">
+					<text>{{ item.text }}</text>
+					<text class="iconfont icongengduo"></text>
+				</view>
+			</navigator>
+		</view>
+	</view>
+</view>

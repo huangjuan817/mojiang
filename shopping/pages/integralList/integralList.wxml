@@ -1,0 +1,22 @@
+<!--pages/integralList/integralList.wxml-->
+<view class="integralhead">
+	<view class="h1">当前积分</view>
+	<view class="h2">0</view>
+	<navigator hover-class="none" url="/pages/content/content" class="h1 h3">
+		<text class="iconfont icon-jifen"></text>
+		积分规则
+	</navigator>
+</view>
+
+<!-- 有则展示 无则没有 -->
+<view class="orderList">
+	<view class="order" wx:for="{{ order }}" wx:key="">
+		<view class="ordername">
+			<text>{{ item.store }}</text>
+		</view>
+		<view class="text">
+			<text>{{ item.number }}</text>
+			<text class="price">+{{ item.money }}</text>
+		</view>
+	</view>
+</view>

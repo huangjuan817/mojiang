@@ -1,0 +1,24 @@
+/* pages/shops/shops.wxss */
+page{
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+}
+.shops_gif{
+	display: block;
+	width: 326rpx;
+	height: 412rpx;
+	margin: 100rpx auto;
+}
+.shops_link{
+	width: 80%;
+	height: 80rpx;
+	line-height: 80rpx;
+	overflow: hidden;
+	background: #d3aa79;
+	border-radius: 8rpx;
+	margin: 20rpx auto;
+	font-size: 30rpx;
+	text-align: center;
+	color: #fff;
+}

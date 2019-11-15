@@ -1,0 +1,74 @@
+/* pages/vip/vip.wxss */
+@import "/public/iconfont.wxss";
+@import "/pages/my/my.wxss";
+
+page {
+	background: #f5f6f6;
+}
+
+.content .discounts {
+	background: #fff;
+	margin-bottom: 20rpx;
+}
+
+.content .discounts .discounts_list .discounts_listC>image.vip_icon1 {
+	width: 167rpx;
+	height: 137rpx;
+}
+
+.content .discounts .discounts_list .discounts_listC>image.vip_icon2 {
+	width: 639rpx;
+	height: 307rpx;
+}
+
+.content .discounts .discounts_list {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.content .discounts .list .listLeft {
+	flex: 3;
+}
+
+.content .discounts .list .listRight {
+	flex: 1;
+}
+
+.viphead {
+	overflow: hidden;
+	background: #fff;
+	padding: 20rpx 0;
+}
+
+.viphead .user {
+	overflow: hidden;
+	padding: 0 20rpx;
+	display: flex;
+	justify-content: space-between;
+}
+
+.viphead .user .vipName {
+	flex: 3;
+	font-size: 32rpx;
+	color: #333;
+}
+
+.viphead .user .vipCard {
+	flex: 1;
+	overflow: hidden;
+	padding: 4rpx 12rpx;
+	border: 2rpx solid #d3aa79;
+	font-size: 28rpx;
+	color: #d3aa79;
+}
+
+.viphead .card {
+	width: 100%;
+	overflow: hidden;
+	margin: 20rpx auto;
+}
+
+.viphead .card>image {
+	width: 750rpx;
+	height: 365rpx;
+}

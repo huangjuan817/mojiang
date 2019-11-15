@@ -1,0 +1,58 @@
+<!--pages/openvip/openvip.wxml-->
+<view class="giftbag">
+	<image src="../../images/banner.jpg"></image>
+</view>
+<view class="benefits">
+	<view class="benefitsTit"><text class="bold">开通礼包</text>每次成功购买后立即发放</view>
+	<view class="benefitsIcon">
+		<view class="iconlist">
+			<view class="iconfont icon-mendian"></view>
+			<view class="num">x2</view>
+			<view class="text">优先券</view>
+		</view>
+		<view class="iconlist">
+			<view class="iconfont icon-mendian"></view>
+			<view class="num">x2</view>
+			<view class="text">免运费券</view>
+		</view>
+		<view class="iconlist">
+			<view class="iconfont icon-mendian"></view>
+			<view class="num">x2</view>
+			<view class="text">买二赠一</view>
+		</view>
+		<view class="iconlist">
+			<view class="iconfont icon-mendian"></view>
+			<view class="num">x2</view>
+			<view class="text">买一赠一</view>
+		</view>
+	</view>
+</view>
+<view class="benefits">
+	<view class="benefitsTit"><text class="bold">每月等级权益</text>根据购买日期，每月同一时间发放</view>
+	<view class="benefitsList" wx:for="{{ level }}" wx:key="">
+		<view class="title">{{ item.title }}</view>
+		<view class="text"><text>{{ item.text }}</text>/月</view>
+	</view>
+</view>
+<view class="benefits" style="padding-bottom: 190rpx;">
+	<view class="benefitsTit"><text class="bold">猩球会员权益</text>猩球会有有效期内可使用</view>
+	<view class="benefitsList" wx:for="{{ vip }}" wx:key="">
+		<view class="title">{{ item.title }}</view>
+		<view class="text">{{ item.text }}</view>
+	</view>
+</view>
+<view class="pay">
+	<view class="paytop">
+		<checkbox value="" checked="" />
+		<text>同意</text>
+		<navigator url="/pages/content/content">《喜茶猩球付费会员服务协议》</navigator>
+	</view>
+	<view class="paybut">
+		<view class="money">
+			总价：<text>179元/12月</text>
+		</view>
+		<view class="but">
+			去支付
+		</view>
+	</view>
+</view>

@@ -1,0 +1,165 @@
+/* pages/openvip/openvip.wxss */
+
+@import "/public/iconfont.wxss";
+
+page {
+	background: #f5f6f6;
+	font-size: 30rpx;
+	color: #333;
+}
+
+checkbox .wx-checkbox-input {
+	width: 22rpx;
+	height: 22rpx;
+
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+	border-radius: 50%;
+	width: 20rpx;
+	height: 20rpx;
+	line-height: 20rpx;
+	text-align: center;
+	font-size: 14rpx;
+	color: #d3aa79;
+	background: transparent;
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.giftbag {
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+}
+
+.giftbag>image {
+	width: 750rpx;
+	height: 511rpx;
+}
+
+.benefits {
+	overflow: hidden;
+	background: #fff;
+	padding: 30rpx 20rpx;
+	margin-bottom: 20rpx;
+}
+
+.benefits .benefitsTit {
+	overflow: hidden;
+	font-size: 26rpx;
+	color: #999;
+	padding-bottom: 10rpx;
+}
+
+.benefits .benefitsTit .bold {
+	font-weight: 600;
+	font-size: 32rpx;
+	color: #333;
+	margin-right: 10rpx;
+}
+
+.benefits .benefitsList {
+	overflow: hidden;
+	padding: 18rpx 0;
+	display: flex;
+}
+
+.benefits .benefitsList .title {
+	flex: 3;
+}
+
+.benefits .benefitsList .text {
+	flex: 1;
+	color: #d3aa79;
+	text-align: right;
+}
+
+.benefits .benefitsList .text>text {
+	font-size: 32rpx;
+	font-weight: 600;
+}
+
+.benefits .benefitsIcon {
+	overflow: hidden;
+	margin: 10rpx 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.benefits .benefitsIcon .iconlist {
+	flex: 1;
+	text-align: center;
+	position: relative;
+}
+
+.benefits .benefitsIcon .iconlist .iconfont {
+	font-size: 60rpx;
+}
+
+.benefits .benefitsIcon .iconlist .num {
+	overflow: hidden;
+	padding: 2rpx 4rpx;
+	border-radius: 50%;
+	background: #d3aa79;
+	font-size: 20rpx;
+	color: #fff;
+	position: absolute;
+	top: 38rpx;
+	right: 48rpx;
+	z-index: 2;
+}
+
+.benefits .benefitsIcon .iconlist .text {
+	line-height: 60rpx;
+	font-size: 28rpx;
+}
+
+.pay {
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 3;
+}
+
+.pay .paytop {
+	overflow: hidden;
+	padding: 20rpx;
+	background: #fff;
+	font-size: 24rpx;
+	color: #999;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.pay .paytop>navigator {
+	color: #d3aa79;
+}
+
+.pay .paybut {
+	height: 100rpx;
+	line-height: 100rpx;
+	overflow: hidden;
+	background: #fff;
+	border-top: 2rpx solid #e7e7e7;
+	display: flex;
+}
+
+.pay .paybut .money {
+	flex: 3;
+	font-size: 32rpx;
+	text-indent: 30rpx;
+}
+
+.pay .paybut .money>text {
+	color: #d3aa79;
+}
+
+.pay .paybut .but {
+	flex: 1;
+	font-size: 32rpx;
+	text-align: center;
+	color: #fff;
+	background: #d3aa79;
+}

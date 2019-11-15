@@ -1,0 +1,57 @@
+<!--pages/task/task.wxml-->
+
+<view class="head">
+	<view class="headLeft">
+		<view class="t1">当前等级</view>
+		<view class="t2">Lv1</view>
+		<view class="t3">
+			<view>经验值：0/299</view>
+			<view>当前积分：0</view>
+		</view>
+	</view>
+	<view class="headImg">
+		<image src="../../images/task2.jpg"></image>
+	</view>
+</view>
+
+<view class="content">
+	<view class="hine">
+		周期任务
+		<text>每周日24：00重置</text>
+	</view>
+	<view class="list">
+		<view class="tasklist" wx:for="{{ tasklist }}" wx:key="" >
+			<view class="listTit">
+				<view>{{ item.title }}</view>
+				<view class="text">
+					积分
+					<text class="t">+{{ item.integral }}</text>
+				</view>
+			</view>
+			<view class="listActive">
+				<text class="active">已完成</text>
+			</view>
+		</view>
+	</view>
+</view>
+<view class="content">
+	<view class="hine">成长任务</view>
+	<view class="list">
+		<view class="tasklist" wx:for="{{ tasklist }}" wx:key="" >
+			<view class="listTit">
+				<view>完善个人资料</view>
+				<view class="text">
+					积分
+					<text class="t">+10</text>
+				</view>
+			</view>
+			<view class="listActive">
+				<text>去完成</text>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+
+

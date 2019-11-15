@@ -1,0 +1,76 @@
+<!--pages/my/my.wxml-->
+<view>
+	<!-- 背景图 -->
+	<image class="bg" src="../../images/bg.jpg"></image>
+	<!-- 内容区 -->
+	<view class="content">
+		<view class="hine">
+			<view class="hine_t1">你好 又差点信</view>
+			<view class="hine_t2">有你更欢喜</view>
+		</view>
+		<!-- 会员区内容 -->
+		<view class="vip vipfirst">
+			<view class="vip_head">
+				<view class="vip_headC">
+					<view class="vip_headCtext">
+						<image bindtap="vip" class="vipIcon" src="../../images/vip.jpg"></image>
+						<view class="vipText" bindtap="openvip">
+							成为星级会员享双倍积分
+							<text class="iconfont icongengduo"></text>
+						</view>
+					</view>
+					<view class="vip_headClevel">Lv1</view>
+				</view>
+				<view class="vip_headI">
+					<image src="../../images/bg.jpg"></image>
+				</view>
+			</view>
+			<view class="vip_list">
+				<navigator hover-class="none" url="/pages/integral/integral" class="vip_listC">
+					<view class="iconfont icon-jifen"></view>
+					<view class="vip_listText1">0</view>
+					<view class="vip_listText2">积分商城</view>
+				</navigator>
+				
+				<navigator hover-class="none" url="/pages/null/null" class="vip_listC">
+					<view class="iconfont icon-quan"></view>
+					<view class="vip_listText1">0</view>
+					<view class="vip_listText2">尛匠券</view>
+				</navigator>
+				
+				<navigator hover-class="none" url="/pages/wallet/wallet" class="vip_listC">
+					<view class="iconfont icon-wallet"></view>
+					<view class="vip_listText1">0</view>
+					<view class="vip_listText2">钱包</view>
+				</navigator>
+			</view>
+		</view>
+		<!-- 任务区内容 -->
+		<view class="vip" bindtap="task">
+			<image class="task" src="../../images/task.jpg"></image>
+		</view>
+		<!-- 开通区内容 -->
+		<view class="discounts">
+			<view class="discounts_head">
+				<text>开通礼包</text>
+				<text bindtap="openvip" class="more">更多</text>
+			</view>
+			<view class="discounts_list">
+				<navigator hover-class="none" url="{{ item.url }}" class="discounts_listC" wx:for="{{ discounts }}" wx:key="">
+					<image src="{{ item.src }}"></image>
+					<view>{{ item.name }}</view>
+				</navigator>
+			</view>
+		</view>
+		<!-- 列表区内容 -->
+		<view class="discounts">
+			<navigator hover-class="none" url="{{ item.url }}" class="list" wx:for="{{ listTap }}" wx:key="">
+				<view class="listLeft">{{ item.name }}</view>
+				<view class="listRight">
+					<text>{{ item.text }}</text>
+					<text class="iconfont icongengduo"></text>
+				</view>
+			</navigator>
+		</view>
+	</view>
+</view>

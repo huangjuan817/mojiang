@@ -1,0 +1,33 @@
+/* pages/integralList/integralList.wxss */
+@import "/public/iconfont.wxss";
+@import "/pages/orderList/orderList.wxss";
+
+page {
+	background: #fafafa;
+}
+
+.integralhead {
+	overflow: hidden;
+	background: #fff;
+	padding: 30rpx;
+	text-align: center;
+}
+
+.integralhead .h1 {
+	font-size: 28rpx;
+	color: #999;
+}
+
+.integralhead .h2 {
+	font-size: 40px;
+	color: #d3aa79;
+}
+
+.integralhead .h3 {
+	text-align: right;
+}
+
+.hine {
+	font-size: 30rpx;
+	color: #333;
+}

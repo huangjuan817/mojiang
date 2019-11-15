@@ -1,0 +1,218 @@
+/* pages/settlement/settlement.wxss */
+
+@import "/public/iconfont.wxss";
+
+page {
+	background: #f7f7f7;
+	color: #343434;
+}
+
+.head {
+	overflow: hidden;
+	padding: 20rpx;
+	background: #fff;
+}
+
+.head .address {
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	font-size: 30rpx;
+}
+
+.head .address .addressText {
+	flex: 5;
+	line-height: 52rpx;
+}
+
+.head .address .addressText .contact {
+	font-size: 24rpx;
+}
+
+.head .address .addressMore {
+	flex: 1;
+	text-align: right;
+	padding-top: 28rpx;
+}
+
+.head .address .addressTab {
+	width: 44%;
+	height: 120rpx;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: 0 4rpx 14rpx rgba(0, 0, 0, .1);
+	margin: 20rpx 10rpx;
+	line-height: 120rpx;
+	text-align: center;
+}
+
+.head .address .addressTab.active {
+	border: 4rpx solid #d3aa79;
+	box-shadow: none;
+	color: #d3aa79;
+}
+
+.head .address .addressTab.active .icongouwudai {
+	color: #d3aa79;
+}
+
+.head .address .addressTab .icon-mendian,
+.head .address .addressTab .icon-qishou {
+	font-size: 46rpx;
+	margin-right: 10rpx;
+}
+
+.head .address .hine {
+	color: #d3aa79;
+	overflow: hidden;
+	line-height: 40rpx;
+}
+
+.head .address .mobile {
+	overflow: hidden;
+	margin-bottom: 10rpx;
+	display: flex;
+	height: 80rpx;
+	line-height: 80rpx;
+}
+
+.head .address .mobile .name {
+	width: 140rpx;
+}
+
+.head .address .mobile .phone {
+	width: 470rpx;
+	height: 100%;
+	overflow: hidden;
+	padding-right: 20rpx;
+}
+
+.head .address .mobile .phone>input {
+	width: 100%;
+	height: 100%;
+	border: none;
+	background: #fff;
+	text-align: right;
+}
+
+.head .address .mobile .mobileHine {
+	width: 120rpx;
+	height: 48rpx;
+	border: 2rpx solid #d3aa79;
+	font-size: 24rpx;
+	color: #d3aa79;
+	border-radius: 6rpx;
+	text-align: center;
+	line-height: 48rpx;
+	margin-top: 16rpx;
+}
+
+.cotent {
+	overflow: hidden;
+	margin-top: 20rpx;
+	padding: 20rpx;
+	background: #fff;
+}
+
+.cotent .contentHine {
+	overflow: hidden;
+	font-size: 32rpx;
+	padding-bottom: 10rpx;
+}
+
+.cotent .body-view {
+	overflow: hidden;
+	margin: 20rpx 0;
+}
+
+.cotent .contentText {
+	overflow: hidden;
+	font-size: 30rpx;
+	line-height: 54rpx;
+}
+
+.cotent .contentText text {
+	color: #d3aa79;
+	font-size: 38rpx;
+	margin: 0 10rpx;
+}
+
+.cotent .goods {
+	overflow: hidden;
+	font-size: 28rpx;
+}
+
+.cotent .goods .goodsList {
+	overflow: hidden;
+	display: flex;
+	line-height: 60rpx;
+}
+
+.cotent .goods .goodsList .name {
+	flex: 2;
+	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.cotent .goods .goodsList .num {
+	flex: 1;
+	text-align: right;
+}
+
+.cotent .goods .goodsList .money {
+	flex: 1;
+	text-align: right;
+}
+
+.cotent .pay {
+	overflow: hidden;
+	font-size: 28rpx;
+}
+
+.cotent .pay .payList {
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	line-height: 60rpx;
+}
+
+.submitBut {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 3;
+	width: 100%;
+	height: 100rpx;
+	line-height: 100rpx;
+	overflow: hidden;
+	background: #fff;
+	display: flex;
+}
+
+.submitBut .money {
+	flex: 3;
+	height: 100%;
+	border-top: 2rpx solid #e7e7e7;
+	font-size: 30rpx;
+	text-indent: 20rpx;
+}
+
+.submitBut .payBut {
+	flex: 1;
+	height: 100%;
+	background: #d3aa79;
+	color: #fff;
+	text-align: center;
+}
+
+.submitBut .money2 {
+	color: #717171;
+}
+
+.submitBut .payBut2 {
+	background: #eaeaea;
+	color: #d3aa79;
+}

@@ -1,0 +1,37 @@
+/* pages/content/content.wxss */
+
+page{
+	background: #fff;
+	font-size: 28rpx;
+	color: #333;
+	line-height: 44rpx;
+}
+.content{
+	height: auto;
+	overflow: hidden;
+	padding: 20rpx 30rpx;
+}
+.content .title{
+	height: auto;
+	overflow: hidden;
+	padding: 20rpx 0rpx;
+	font-size: 32rpx;
+	text-align: center;
+	font-weight: 600;
+}
+.content .text{
+	height: auto;
+	overflow: hidden;
+	font-size: 28rpx;
+	color: #333;
+	line-height: 44rpx;
+	text-indent: 40rpx;
+}
+.content .text .textTit{
+	font-size: 30rpx;
+	font-weight: 600;
+	text-indent: 0rpx;
+}
+.content .text>view{
+	padding: 8rpx 0rpx;  
+}

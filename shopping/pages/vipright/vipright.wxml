@@ -1,0 +1,25 @@
+<!--pages/vipright/vipright.wxml-->
+<view class="giftbag">
+	<image src="../../images/banner.jpg"></image>
+</view>
+<view class="benefits">
+	<view class="benefitsTit"><text class="bold">开通后每月月享：白银等级权益</text></view>
+	<view class="benefitsList" wx:for="{{ level }}" wx:key="">
+		<view class="title">{{ item.title }}</view>
+		<view class="text"><text>{{ item.text }}</text>/月</view>
+	</view>
+</view>
+<view class="benefits">
+	<view class="benefitsTit"><text class="bold">猩球会员权益</text></view>
+	<view class="benefitsList" wx:for="{{ vip }}" wx:key="">
+		<view class="title">{{ item.title }}</view>
+		<view class="text">{{ item.text }}</view>
+	</view>
+</view>
+<view class="benefits">
+	<view class="benefitsTit"><text class="bold">升级福利</text>升至下一黄金等级</view>
+	<view class="benefitsList" wx:for="{{ vip }}" wx:key="">
+		<view class="title">{{ item.title }}</view>
+		<view class="text">{{ item.text }}</view>
+	</view>
+</view>

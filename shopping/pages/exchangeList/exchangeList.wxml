@@ -1,0 +1,20 @@
+<!--pages/exchangeList/exchangeList.wxml-->
+<!-- 无内容 -->
+<view class="exchangeList">
+	<image src="../../images/exchangeNull.jpg"></image>
+	<view>暂无兑换记录</view>
+</view>
+
+<!-- 内容不为空展示 -->
+<view class="orderList">
+	<view class="order" wx:for="{{ order }}" wx:key="">
+		<view class="ordername">
+			<text>{{ item.store }}</text>
+		</view>
+		<view class="text">
+			<text>{{ item.number }}</text>
+			<text class="price">+{{ item.money }}</text>
+		</view>
+	</view>
+</view>
+

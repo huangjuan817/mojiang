@@ -1,0 +1,29 @@
+/* pages/wallet/wallet.wxss */
+page {
+	background: #fff;
+}
+
+.wallet {
+	width: 100%;
+	overflow: hidden;
+}
+
+.wallet .walletImg1 {
+	width: 750rpx;
+	height: 1079rpx;
+}
+
+.wallet .walletImg2 {
+	width: 750rpx;
+	height: 746rpx;
+}
+
+.wallet .walletImg3 {
+	width: 750rpx;
+	height: 542rpx;
+}
+
+.wallet .walletImg4 {
+	width: 750rpx;
+	height: 933rpx;
+}

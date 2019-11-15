@@ -1,0 +1,101 @@
+/* pages/address/address.wxss */
+
+@import "/public/iconfont.wxss"
+
+page {
+	background: #f7f7f7;
+	font-size: 30rpx;
+}
+
+.alterSite {
+	height: auto;
+	overflow: hidden;
+	background: #fff;
+	padding: 0 30rpx;
+	margin-top: 20rpx;
+}
+
+.siteForm {
+	width: 100%;
+	overflow: hidden;
+	font-size: 30rpx;
+	color: #383838;
+}
+
+.formBox {
+	height: 90rpx;
+	overflow: hidden;
+	border-bottom: 1rpx solid #d9d9d9;
+	line-height: 90rpx;
+}
+
+.formBox:last-child {
+	border-bottom: 0rpx;
+}
+
+.formT {
+	float: left;
+	width: 20%;
+}
+
+.formP {
+	float: left;
+	width: 80%;
+	font-size: 30rpx;
+	color: #383838;
+	border: none;
+	background: none;
+	outline: none;
+	height: 100%;
+}
+
+.siteSub {
+	width: 96%;
+	height: 90rpx;
+	line-height: 90rpx;
+	overflow: hidden;
+	border-radius: 8rpx;
+	text-align: center;
+	font-size: 32rpx;
+	color: #fff;
+	margin: 40rpx auto;
+	background: #343434;
+}
+
+.siteSub>input {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border: none;
+	background: none;
+	outline: none;
+	font-size: 36rpx;
+	colro: #fff;
+}
+
+.formH {
+	height: auto;
+	overflow: hidden;
+	margin-left: 16%;
+	font-size: 24rpx;
+	margin-right: 10rpx;
+	float: left;
+	margin-bottom: 2rpx;
+	/*padding:2rpx 10rpx;*/
+	border: 1rpx solid #abd56a;
+	border-radius: 4rpx;
+	color: #383838;
+}
+
+.formH>text {
+	display: block;
+}
+
+.formH:last-child {
+	margin-left: 0rpx;
+}
+
+.formH.selected {
+	background: #abd56a;
+	color: #fff;
+}

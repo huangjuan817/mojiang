@@ -1,0 +1,67 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/take/take",
+		"pages/my/my",
+		"pages/orderList/orderList",
+		"pages/settlement/settlement",
+		"pages/addressList/addressList",
+		"pages/address/address",
+		"pages/note/note",
+		"pages/openvip/openvip",
+		"pages/task/task",
+		"pages/null/null",
+		"pages/content/content",
+		"pages/vip/vip",
+		"pages/vipright/vipright",
+		"pages/viplevel/viplevel",
+		"pages/wallet/wallet",
+		"pages/integral/integral",
+    "pages/integralList/integralList",
+    "pages/exchangeList/exchangeList",
+    "pages/exchange/exchange"
+
+
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "尛匠",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"color": "#b7b7b7",
+		"selectedColor": "#abd56a",
+		"backgroundColor": "#fff",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "点餐",
+				"iconPath": "images/icon-home.png",
+				"selectedIconPath": "images/icon-home-active.png"
+			},
+			{
+				"pagePath": "pages/take/take",
+				"text": "取茶",
+				"iconPath": "images/icon-indent.png",
+				"selectedIconPath": "images/icon-indent-active.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "images/icon-mine.png",
+				"selectedIconPath": "images/icon-mine-active.png"
+			}
+		]
+	},
+	"debug": true,
+	"navigateToMiniProgramAppIdList": [
+		"wx2fea031ddc74d45b"
+	],
+	"permission": {
+		"scope.userLocation": {
+			"desc": "你的位置信息将用于小程序位置接口的效果展示"
+		}
+	},
+	"sitemapLocation": "sitemap.json"
+}

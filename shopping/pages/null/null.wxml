@@ -1,0 +1,9 @@
+<!--pages/null/null.wxml-->
+<view>
+	<viw class="take">
+		<image class="take_icon" src="../../images/notice.jpg"></image>
+		<view class="take_hine">
+			<view>暂无数据</view>
+		</view>
+	</viw>
+</view>

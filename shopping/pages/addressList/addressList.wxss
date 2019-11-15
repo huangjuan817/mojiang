@@ -1,0 +1,71 @@
+/* pages/addressList/addressList.wxss */
+
+@import "/public/iconfont.wxss"
+
+page {
+	background: #f7f7f7;
+	font-size: 30rpx;
+}
+
+.addressUnll {
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	color: #bebdbc;
+	line-height: 50rpx;
+	padding-top: 280rpx;
+}
+
+.addressBut {
+	position: fixed;
+	width: 100%;
+	height: 100rpx;
+	line-height: 100rpx;
+	overflow: hidden;
+	left: 0;
+	bottom: 0;
+	z-index: 3;
+	padding: 30rpx 0;
+}
+
+.addressBut .taplink {
+	width: 96%;
+	height: 100%;
+	overflow: hidden;
+	background: #424141;
+	border-radius: 8rpx;
+	text-align: center;
+	color: #fff;
+	margin: 0 auto;
+}
+
+.addressList {
+	overflow: hidden;
+}
+
+.addressList .address {
+	overflow: hidden;
+	padding: 20rpx;
+	margin-top: 20rpx;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.addressList .address .addressText {
+	width: 90%;
+	overflow: hidden;
+	color: #000000;
+	line-height: 48rpx;
+}
+
+.addressList .address .addressText .site {
+	font-size: 26rpx;
+	color: #5d5d5d;
+}
+
+.addressList .address .iconbianji {
+	text-align: right;
+	margin-top: 24rpx;
+	font-size: 34rpx;
+}

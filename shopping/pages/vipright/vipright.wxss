@@ -1,0 +1,3 @@
+/* pages/vipright/vipright.wxss */
+@import "/public/iconfont.wxss";
+@import "/pages/openvip/openvip.wxss";

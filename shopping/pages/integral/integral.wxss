@@ -1,0 +1,55 @@
+/* pages/integral/integral.wxss */
+page {
+	background: #f5f6f6;
+	color: #343434;
+	font-size: 30rpx;
+}
+
+.head {
+	height: auto;
+	overflow: hidden;
+	background: #fff;
+	padding: 20rpx;
+	display: flex;
+}
+
+.head .headText {
+	flex: 1;
+}
+
+.head .headText .t1 {
+	overflow: hidden;
+	line-height: 52rpx;
+}
+
+.head .headText .t2 {
+	overflow: hidden;
+	font-size: 44rpx;
+	font-weight: 600;
+}
+
+.head .headText .t3 {
+	overflow: hidden;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 40rpx;
+	text-align: center;
+}
+
+.head .headText .t3>navigator {
+	flex: 2;
+}
+
+.head .headText .t3>view {
+	flex: 1;
+}
+
+.head .headImg {
+	flex: 1;
+	text-align: right;
+}
+
+.head .headImg>image {
+	width: 375rpx;
+	height: 208rpx;
+}

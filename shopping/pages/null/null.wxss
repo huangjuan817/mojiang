@@ -1,0 +1,13 @@
+/* pages/null/null.wxss */
+@import "/public/iconfont.wxss";
+@import "/pages/take/take.wxss";
+
+page {
+	background: #fff;
+	font-size: 30rpx;
+	color: #333;
+}
+.take_icon {
+	width: 408rpx;
+	height: 341rpx;
+}

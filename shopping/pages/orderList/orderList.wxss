@@ -1,0 +1,47 @@
+/* pages/orderList/orderList.wxss */
+
+@import "/public/iconfont.wxss";
+@import "/pages/take/take.wxss";
+
+page {
+	background: #efefef;
+}
+
+.orderList {
+	overflow: hidden;
+}
+
+.orderList .order {
+	overflow: hidden;
+	padding: 20rpx;
+	margin-top: 20rpx;
+	font-size: 28rpx;
+	color: #999;
+	line-height: 58rpx;
+	background: #fff;
+}
+
+.orderList .order .ordername {
+	font-size: 30rpx;
+	color: #333;
+	overflow: hidden;
+}
+
+.orderList .order .ordername .state1 {
+	color: #d3aa79;
+	float: right;
+}
+
+.orderList .order .text {
+	overflow: hidden;
+}
+
+.orderList .order .text>text {
+	flex: 1;
+}
+
+.orderList .order .text .price {
+	font-size: 30rpx;
+	color: #333;
+	float: right;
+}

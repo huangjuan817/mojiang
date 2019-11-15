@@ -1,0 +1,25 @@
+/* pages/exchangeList/exchangeList.wxss */
+@import "/public/iconfont.wxss";
+@import "/pages/orderList/orderList.wxss";
+
+page {
+	background: #f7f7f7;
+}
+
+.exchangeList {
+	overflow: hidden;
+	text-align: center;
+	padding: 120rpx 20rpx;
+}
+
+.exchangeList>image {
+	display: block;
+	width: 214rpx;
+	height: 240rpx;
+	margin: 30rpx auto;
+}
+
+.exchangeList>view {
+	font-size: 28rpx;
+	color: #333;
+}

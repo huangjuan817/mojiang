@@ -1,0 +1,173 @@
+/* pages/take/take.wxss */
+@import "/public/iconfont.wxss"
+
+.icongengduo:before {
+	font-size: 24rpx;
+}
+.icon-dianhua{
+	font-size: 70rpx;
+}
+
+page {
+	background-color: #fff;
+}
+.icon-yixiadan, .icon-zhizuozhong, .icon-peisongzhong, .icon-yisongda{
+	font-size: 76rpx;
+	line-height: 78rpx;
+}
+
+.take {
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.take_icon {
+	display: block;
+	margin: 200rpx auto 20rpx auto;
+	width: 188rpx;
+	height: 239rpx;
+}
+
+.take_hine {
+	width: 320rpx;
+	overflow: hidden;
+	font-size: 24rpx;
+	color: #878787;
+	line-height: 48rpx;
+	margin: 0 auto;
+}
+
+.take_tabBar {
+	width: 400rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+	overflow: hidden;
+	background: #d3aa79;
+	border-radius: 8rpx;
+	margin: 180rpx auto 20rpx auto;
+	font-size: 30rpx;
+	color: #fff;
+}
+
+.take_history {
+	overflow: hidden;
+}
+
+
+.takeFood {
+	width: 90%;
+	height: auto;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: 0rpx 0rpx 30rpx rgba(0, 0, 0, .1);
+	border-radius: 10rpx;
+	margin: 40rpx auto;
+}
+
+.takeFood .takeTop {
+	height: auto;
+	overflow: hidden;
+	padding: 20rpx;
+	border-bottom: 2rpx solid #eee;
+	text-align: center;
+}
+
+.takeFood .takeTop .hine {
+	overflow: hidden;
+	font-size: 30rpx;
+	color: #333;
+	line-height: 60rpx;
+}
+
+.takeFood .takeTop .number {
+	overflow: hidden;
+	font-size: 48rpx;
+	color: #333;
+}
+
+.takeFood .takeTop .credentials {
+	overflow: hidden;
+	font-size: 24rpx;
+	color: #d3aa79;
+}
+
+.takeFood .takeTop .flow {
+	overflow: hidden;
+	margin: 30rpx;
+	display: flex;
+	justify-content: space-between;
+	line-height: 48rpx;
+}
+
+.takeFood .takeTop .flow .flowlist {
+	flex: 1;
+	font-size: 24rpx;
+}
+
+.takeFood .takeCom {
+	overflow: hidden;
+	padding: 0rpx 20rpx;
+}
+
+.takeFood .takeCom .contact {
+	overflow: hidden;
+	padding: 20rpx 0;
+	border-bottom: 2rpx solid #eee;
+}
+
+.takeFood .takeCom .merchants {
+	display: flex;
+}
+
+.takeFood .takeCom .merchants .merchantsName {
+	flex: 3;
+	overflow: hidden;
+	font-size: 30rpx;
+	color: #333;
+	line-height: 58rpx;
+}
+
+.takeFood .takeCom .merchants .merchantsName .site {
+	font-size: 28rpx;
+	color: #999;
+}
+
+.takeFood .takeCom .merchants .merchantsMobile {
+	flex: 1;
+	overflow: hidden;
+	font-size: 28rpx;
+	color: #999;
+	text-align: center;
+}
+
+.takeFood .takeCom .contact .goodsList {
+	overflow: hidden;
+	display: flex;
+	line-height: 60rpx;
+}
+
+.takeFood .takeCom .contact .goodsList .name {
+	flex: 2;
+	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.takeFood .takeCom .contact .goodsList .num {
+	flex: 1;
+	text-align: right;
+}
+
+.takeFood .takeCom .contact .goodsList .money {
+	flex: 1;
+	text-align: right;
+}
+
+.takeFood .takeCom .order {
+	font-size: 28rpx;
+	color: #999;
+	line-height: 44rpx;
+	border-bottom: none;
+}

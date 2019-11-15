@@ -1,0 +1,74 @@
+<!--pages/take/take.wxml-->
+<view>
+	<!-- 数据为空展示 -->
+	<viw class="take">
+		<image class="take_icon" src="../../images/take.jpg"></image>
+		<view class="take_hine">
+			<view>您今天还没有下单</view>
+			<view>快去选择一杯喜欢的茶吧</view>
+		</view>
+		<view class="take_tabBar" bindtap="take_tabBar">去点单</view>
+		<view class="take_hine take_history" bindtap="take_history">
+			历史订单
+			<text class="iconfont icongengduo"></text>
+		</view>
+	</viw>
+	
+	<!-- 数据不为空 -->
+	
+	<view class="takeFood">
+		<view class="takeTop">
+			<view class="hine">取茶号</view>
+			<view class="number">4588</view>
+			<view class="flow">
+				<view class="flowlist">
+					<text class="iconfont icon-yixiadan"></text>
+					<view>已下单</view>
+				</view>
+				<view class="flowlist">
+					<text class="iconfont icon-zhizuozhong"></text>
+					<view>制作中</view>
+				</view>
+				<view class="flowlist">
+					<text class="iconfont icon-peisongzhong"></text>
+					<view>配送中</view>
+				</view>
+				<view class="flowlist">
+					<text class="iconfont icon-yisongda"></text>
+					<view>已送达</view>
+				</view>
+			</view>
+			<view class="credentials">请凭此页到店取茶</view>
+			
+		</view>
+		<view class="takeCom">
+			<view class="contact merchants">
+				<view class="merchantsName">
+					<view>重庆南坪店</view>
+					<view class="site">重庆市南岸区科尔大学45-8</view>
+				</view>
+				<view class="merchantsMobile" bindtap="mobile">
+					<text class="iconfont icon-dianhua"></text>
+					<view>联系门店</view>
+				</view>
+			</view>
+			<view class="contact">
+				<view class="goodsList">
+					<view class="name">商品名称</view>
+					<view class="num">￥2</view>
+					<view class="money">￥12</view>
+				</view>
+				<view class="goodsList">
+					<view class="name">配送费</view>
+					<view class="num"></view>
+					<view class="money">￥10</view>
+				</view>
+			</view>
+			<view class="contact order">
+				<view>下单时间：2019-15-15 14：50</view>
+				<view>下单编号：201915151450</view>
+			</view>
+		</view>
+	</view>
+	
+</view>

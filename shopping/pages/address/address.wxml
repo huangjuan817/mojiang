@@ -1,0 +1,28 @@
+<!--pages/address/address.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+	<view class="alterSite">
+		<view class="formBox">
+			<text class="formT">姓名</text>
+			<input type="text" class="formP" name="contact" value="{{contact}}" placeholder="请填写收货人的姓名" />
+			<block wx:for="{{gender}}" wx:key="">
+				<view class="formH {{index==selected?'selected':''}}" data-index="{{index}}" catchtap="turnMenu">
+					<text data-name="{{item.genderList}}" style="padding:2px 10px;">{{item.genderList}}</text>
+				</view>
+			</block>
+		</view>
+		<view class="formBox">
+			<text class="formT">手机号</text>
+			<input type="number" class="formP" name="mobile" value="{{mobile}}" maxlength="11" placeholder="请填写收货手机号码" />
+		</view>
+
+		<view class="formBox">
+			<text class="formT">收货地址</text>
+			<input type="text" bindtap="getAddress" class="formP" name="addr" value="{{addr}}" placeholder="点击选择" />
+		</view>
+		<view class="formBox">
+			<text class="formT">门牌号</text>
+			<input type="text" class="formP" name="house" value="{{house}}" placeholder="如：科尔国际商务大厦13-5" />
+		</view>
+	</view>
+	<button class="siteSub" formType="submit">保存</button>
+</form>

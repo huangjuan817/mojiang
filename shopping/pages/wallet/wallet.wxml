@@ -1,0 +1,7 @@
+<!--pages/wallet/wallet.wxml-->
+<view class="wallet">
+	<image class="walletImg1" src="../../images/wallet1.jpg"></image>
+	<image class="walletImg2" src="../../images/wallet2.jpg"></image>
+	<image class="walletImg3" src="../../images/wallet3.jpg"></image>
+	<image class="walletImg4" src="../../images/wallet4.jpg"></image>
+</view>

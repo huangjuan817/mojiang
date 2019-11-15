@@ -1,0 +1,8 @@
+<!--pages/shops/shops.wxml-->
+<view>
+	<image class="shops_gif" src="../../images/shops_git.jpg"></image>
+	<view class="shops_link">前往尛匠百货</view>
+	<!-- 获取用户手机号 -->
+	<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取用户手机号</button>
+	<!-- <navigator style="text-align: center;line-height: 80rpx;background: #ddd;" url="/pages/settlement/settlement" hover-class="navigator-hover">跳转到结算页面</navigator> -->
+</view>

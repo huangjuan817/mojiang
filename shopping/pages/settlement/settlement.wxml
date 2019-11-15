@@ -1,0 +1,89 @@
+<!--pages/settlement/settlement.wxml-->
+<view>
+	<!-- 地址 -->
+	<view class="head">
+		<view class="address" bindtap="address">
+			<view class="addressText">
+				<view>显示你所输入的地址</view>
+				<view class="contact">陈国（先生） 15012966666</view>
+			</view>
+			<view class="addressMore">
+				<text class="iconfont icongengduo"></text>
+			</view>
+		</view>
+		<!-- 配送方式 -->
+		<view class="address">
+			<view class="addressTab {{peiSong==0?'active':''}}" data-current="0" bindtap="clickTab"><text class="iconfont icon-mendian"></text>门店自取</view>
+			<view class="addressTab {{peiSong==1?'active':''}}" data-current="1" bindtap="clickTab" ><text class="iconfont icon-qishou"></text>外卖配送</view>
+		</view>
+		<!-- 门店自取显示内容 -->
+		<view class="address">
+			<view class="mobile">
+				<view class="name">联系电话</view>
+				<view class="phone">
+					<input type="text" placeholder="13594293639" />
+				</view>
+				<text class="mobileHine">自动填充</text>
+			</view>
+		</view>
+		<view class="address">
+			<view class="hine">成功下单后，骑手可立即取茶配送</view>
+		</view>
+	</view>
+
+	<!-- 进度说明 -->
+	<view class="cotent">
+		<view class="contentHine">门店繁忙程度</view>
+		<progress percent="50" stroke-width="12" border-radius="40" active show-info/>
+		<view class="contentText">
+			<view>前面还有<text>31单/55杯</text>制作中view</view>
+			<view>您的订单预计等待<text>27分钟</text>后取茶</view>
+		</view>
+	</view>
+	<!-- 商品明细 -->
+	<view class="cotent">
+		<view class="contentHine">商品明细</view>
+		<view class="goods">
+			<view class="goodsList">
+				<view class="name">商品名称</view>
+				<view class="num">x2</view>
+				<view class="money">￥12</view>
+			</view>
+			<view class="goodsList">
+				<view class="name">配送费</view>
+				<view class="num"></view>
+				<view class="money">￥10</view>
+			</view>
+		</view>
+	</view>
+	<!-- 支付方式、备注 -->
+	<view class="cotent" style="padding-bottom: 130rpx;">
+		<view class="pay">
+			<view class="payList">
+				<view>支付方式</view>
+				<view>
+					微信支付
+					<text class="iconfont icongengduo"></text>
+				</view>
+			</view>
+			<view class="payList" bindtap="note">
+				<view>备注</view>
+				<view>
+					不打包
+					<text class="iconfont icongengduo"></text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<!-- 支付栏 -->
+	<view class="submitBut">
+		<view class="money money2">
+			<text>￥12</text>
+			<text>商品总价满40元起送，还差25元</text>
+		</view>
+		<view class="payBut payBut2" bindtap="linkTab">
+			<text>支付</text>
+			<text>去凑单</text>
+		</view>
+	</view>
+</view>
